@@ -1,0 +1,38 @@
+sudo apt-get install build-essential
+
+sudo apt-get install libpcre3 libpcre3-dev  libpcrecpp0 libssl-dev zlib1g-dev
+
+sudo apt-get install libgeoip-dev
+./configure --prefix=/etc/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-client-body-temp-path=/var/lib/nginx/body --http-fastcgi-temp-path=/var/lib/nginx/fastcgi --http-log-path=/var/log/nginx/access.log  --lock-path=/var/lock/nginx.lock --pid-path=/var/run/nginx.pid --with-debug  --with-http_geoip_module
+
+
+
+
+
+
+
+Download geoip database
+http://dev.maxmind.com/
+
+
+
+
+
+
+
+
+
+
+
+nginx path prefix: "/etc/nginx"
+  nginx binary file: "/etc/nginx/sbin/nginx"
+  nginx configuration prefix: "/etc/nginx"
+  nginx configuration file: "/etc/nginx/nginx.conf"
+  nginx pid file: "/var/run/nginx.pid"
+  nginx error log file: "/var/log/nginx/error.log"
+  nginx http access log file: "/var/log/nginx/access.log"
+  nginx http client request body temporary files: "/var/lib/nginx/body"
+  nginx http proxy temporary files: "proxy_temp"
+  nginx http fastcgi temporary files: "/var/lib/nginx/fastcgi"
+  nginx http uwsgi temporary files: "uwsgi_temp"
+  nginx http scgi temporary files: "scgi_temp"
