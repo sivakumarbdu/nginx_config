@@ -1,0 +1,25 @@
+Nginx from source
+**Depndencies**
+
+sudo apt-get install libpcre3 libpcre3-dev  libpcrecpp0 libssl-dev zlib1g-dev make
+
+wget http://nginx.org/download/nginx-1.9.9.tar.gz
+
+ ./configure -sbin-path=/usr/sbin/nginx --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-debug --with-pcre --with-http_ssl_module
+
+ make
+
+ sudo make install
+
+ Add nginx to services
+
+ download init script https://www.nginx.com/resources/wiki/start/topics/examples/initscripts/
+
+ https://github.com/JasonGiedymin/nginx-init-ubuntu
+ 
+
+
+ Add nginx conf file location:
+
+NGINX_CONF_FILE=/etc/nginx/nginx.conf
+DAEMON=/usr/bin/nginx
